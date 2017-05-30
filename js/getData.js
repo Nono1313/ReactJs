@@ -1,5 +1,6 @@
 function getData(grafico){
 	var data = Array();
+	$.support.cors = true;
 	$.ajax({ 
     	type: 'GET', 
     	url: 'http://bcstest.mybluemix.net/bcstest/rest/indices/consultaIndices', 
@@ -28,4 +29,4 @@ var newGrafico = {
 	f_hasta: '2016-01-01',
 }
 
-getData(newGrafico);
+//getData(newGrafico);
